@@ -1,11 +1,28 @@
+<!--('dbconnect.php');-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My website</title>
+    <title>UPM</title>
 </head>
 <body>
-<h1>Holly</h1>
-<h2>Robertson</h2>
+<h1>UPM</h1>
+<h2>Uni Project Manager</h2>
+<form id='login' action='login.php' method='post' accept-charset='UTF-8'>
+    <fieldset>
+        <legend>Login</legend>
+        <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+        <label for='username' >UserName*:</label>
+        <input type='text' name='username' id='username' maxlength="100" />
+
+        <label for='password' >Password*:</label>
+        <input type='passowrd' name='password' id='password' maxlength="100" />
+
+        <input type='submit' name='Submit' value='Submit' />
+
+    </fieldset>
+</form>
 </body>
 </html>
