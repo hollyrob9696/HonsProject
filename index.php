@@ -1,16 +1,16 @@
 <?php
 if($_POST)
 {
-    $host = "localhost";
-    $user = "root";
-    $pass="";
+    $host = "us-cdbr-azure-central-a.cloudapp.net";
+    $user = "b9c92a9c81258c";
+    $pass="aae783b2";
     $db="auth";
 
     $username=$POST['username'];
     $password=$POST['password'];
 
 $conn=mysqli_connect($host, $user, $pass, $db);
-$query="SELECT * from honsdb where username=$username and password='$passowrd'";
+$query="SELECT * from honsdb where username=$username and password='$password'";
 
 $result=mysqli_query($conn, $query);
 if(mysqli_num_rows($result)==1){
