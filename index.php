@@ -1,25 +1,13 @@
 <?php
-if($_POST)
-{
-    $host = "us-cdbr-azure-central-a.cloudapp.net";
-    $user = "b9c92a9c81258c";
-    $pass="aae783b2";
-    $db="auth";
+include("dbconnect.php");
 
-    $username=$POST['username'];
-    $password=$POST['password'];
-
-$conn=mysqli_connect($host, $user, $pass, $db);
-$query="SELECT * from honsdb where username=$username and password='$password'";
-
-$result=mysqli_query($conn, $query);
-if(mysqli_num_rows($result)==1){
-    session_start();
-    $_SESSION['auth']='true';
-    header('location:home.php');
+$sql = "SELECT * from Users";
+$result = $db->query($sql);
+while($row = $result->fetch_array()){
+    echo "<p>'' .$row['username']. ''</p>";
+    
 }
-else {echo 'Wrong username or password';}
-}
+
 ?>
 
 <h1>UPM</h1>
@@ -32,5 +20,5 @@ else {echo 'Wrong username or password';}
 password:<br>
     <input type="password" name="password">
     <br>
-    <input type="submit" value="login">
+    <input type="submit">
 </form>
