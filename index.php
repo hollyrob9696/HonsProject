@@ -9,62 +9,57 @@ include ("dbconnect.php");
 <head>
     <meta charset="UTF-8">
     <title>UPM Login</title>
-    <!--<link rel="stylesheet" href="css/style2.css"/>-->
+    <link rel="stylesheet" href="css/style2.css"/>
+    <style>
+        div{
+            padding-top: 50px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+                padding-left: 80px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-
-    <nav>
-        <div class="nav-bar">
-            <ul>
-                <li class="sm1"><a href="index.php"></a></li>
-                <li class="sm2"><a href="Club_Search.php"></a></li>
-                <li class="sm3"><a href="Map.php"></a></li>
-                <li class="sm4"><a href="Login.php"></a></li>
-            </ul>
-        </div>
-
-
         <div class="main-logo">
 
            <!-- Insert logo here  <IMG SRC=""> -->
 
         </div>
-    </nav>
 </header>
 
 <main>
 
     <?php
 
-    if (isset($_SESSION['username'])) {
+    #if (isset($_SESSION['username'])) {
 
-        $username = $_SESSION['username'] ?>
+        #$username = $_SESSION['username'] ?>
 
-        <h1>Successfully logged in.</h1>
-
-    <?php }else{ ?>
+        <!--<h1>Successfully logged in.</h1> -->
+        <!--eventually require a php else statement here-->
 
         <div class="login">
 
-            <div id="form">
-
-                <form name="form1" method="post" action="validate.php">
-                    <label>Username:</label><input type="text" name="username" class="box1"/><br/>
-                    <label>Password:</label><input type="password" name="password" class="box2"/><br/>
-                    <input type="submit" value="Log In"/><br/>
-                </form>
-
-            </div>
+            <form action="/action_page.php">
+                  <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                      </div>
+                  <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                      </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+            </form>
 
             <div id="New User">
                 <h1>Don't have an account?</h1>
                 <a href="New_User.php">Register an account here!</a>
             </div>
         </div>
-
-    <?php } ?>
+     ?>
 
 
     <aside>

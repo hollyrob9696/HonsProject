@@ -79,7 +79,10 @@ if(!$_SESSION['auth'])
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                  <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand">
+                <!-- logo not working-->
+                <!-- <IMG SRC="images/UPMLogo.jpg" width="230px" height="158px">-->
+                </a>
                 </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav navbar-right">
@@ -103,7 +106,7 @@ if(!$_SESSION['auth'])
 <p>Univeristy Project Manager is a web app designed too... blah blah blah students, manage courseworks, self evaluate etc</p>
 </div>
 
-<div class="container-fluid bg-grey">
+<div class="container-fluid bg-grey text-center">
     <h4>What is Project Management?</h4>
     <p>Defination of PM.... It involes <strong>Planning</strong>, <strong>Scope</strong>, etc</p>
 </div>
@@ -113,7 +116,7 @@ if(!$_SESSION['auth'])
     <p>Important for industry, dividing time, achieving the best grades possible etc etc</p>
 </div>
 
-<div class="container-fluid text-center">
+<div class="container-fluid bg-grey text-center">
       <div class="row">
             <div class="col-sm-8">
                   <h4>Why is it Important to Plan?</h4>
@@ -125,7 +128,7 @@ if(!$_SESSION['auth'])
           </div>
 </div>
 
-<div class="container-fluid bg-grey text-center">
+<div class="container-fluid text-center">
       <div class="row">
             <div class="col-sm-4">
                   <span class="glyphicon glyphicon-signal logo"></span>
