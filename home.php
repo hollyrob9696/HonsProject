@@ -103,12 +103,17 @@ if(!$_SESSION['auth'])
 
 <div class=""container-fluid">
 <h4>What is UPM?</h4>
-<p>Univeristy Project Manager is a web app designed too... blah blah blah students, manage courseworks, self evaluate etc</p>
+<p>Univeristy Project Manager is a web app designed to allow students to track their multiple projects and deadlines while reflecting on their own project management skills. Learning how to understand scope, adhere to a plan and effectively divide time between projects.
+It contains three main pages:
+    My projects, visually tracks completed and non-completed projects and countdown to deadlines.
+    Self-evaluate, reflect on how well you’ve managed completed projects.
+    My stats, look at all your previous projects and how you managed them
+</p>
 </div>
 
 <div class="container-fluid bg-grey text-center">
     <h4>What is Project Management?</h4>
-    <p>Defination of PM.... It involes <strong>Planning</strong>, <strong>Scope</strong>, etc</p>
+    <p>Project management can be defined as the practice of initiating, planning, coordinating, controlling and executing a project. Managing resources and time. It involes an understanding of <strong>Planning</strong> and <strong>Scope</strong></p>
 </div>
 
 <div class="container-fluid text-center">
@@ -119,8 +124,9 @@ if(!$_SESSION['auth'])
 <div class="container-fluid bg-grey text-center">
       <div class="row">
             <div class="col-sm-8">
-                  <h4>Why is it Important to Plan?</h4>
-                  <p>blah blah blah blah .... etc etc etc</p>
+                  <h4>Why is Planning Important?</h4>
+                  <p>In university allows you to achieve the best grades possible, reduces stress by planning appropriately and understanding what is required from you, helps you juggle your multiple projects.
+                It is good preparation for entering the working world.</p>
                 </div>
             <div class="col-sm-4">
                   <span class="glyphicon glyphicon-signal logo"></span>
@@ -135,7 +141,7 @@ if(!$_SESSION['auth'])
                 </div>
             <div class="col-sm-8">
                   <h4>What is Scope?</h4>
-                  <p>blah blah blah blah .... etc etc etc</p>
+                  <p>The scope of a project is the project goals, deliverables and deadlines. It is what is required from the project in order for it to be successful and complete.</p>
                 </div>
           </div>
 </div>
